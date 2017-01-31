@@ -29,9 +29,9 @@
                         <li class="active">
                             <a href="{{ url('/admin/roles') }}">Roles</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="{{ url('/admin/recibos') }}">Recibos</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>

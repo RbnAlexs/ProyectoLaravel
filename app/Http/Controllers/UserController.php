@@ -95,6 +95,18 @@ class UserController extends Controller
         return Redirect::back();
     }
 
+    public function Admin($Administracion)
+    {
+        foreach ($this->roles()->get() as $role)
+        {
+            if ($role->name == $Administracion)
+            {
+                echo 'HOLAAAAAAAAAAAAAAAAAAAAAAAAAA';
+                //return true;
+            }
+        }
+        return false;
+    }
 
     /**
      * Show the form for editing the specified resource.

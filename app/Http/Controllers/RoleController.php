@@ -65,6 +65,14 @@ class RoleController extends Controller
         //
     }
 
+    public function logicaldelete($id)
+    {
+        $role = Role::findOrFail($id);
+        $role->delete();
+        Session::flash('message', array('success','Se ha elimado el rol.'));
+        return Redirect::to('/admin/roles');
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -74,7 +82,6 @@ class RoleController extends Controller
     public function edit($id)
     {
         $rol = Role::findOrFail($id);
-
         return view('admin.roles.edit')
             ->withRol($rol);
     }
