@@ -41,7 +41,7 @@
                     </div>
                     @endif
                     <div class="col-md-2">
-                        <a href="{{ url('/logout') }}">Logout</a>
+                        <a href="{{ url('/logout') }}">Salir</a>
                     </div>
                 </div>
             </div><!-- end container -->
