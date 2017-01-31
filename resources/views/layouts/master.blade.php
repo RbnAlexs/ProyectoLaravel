@@ -35,9 +35,11 @@
                     <div class="col-md-2">
                         <a href="http://cepe.com.mx/franslux/mi-cuenta/" target="_blank">Tienda</a>
                     </div>
+                    @if(Auth::user()->id ==8)
                     <div class="col-md-4 text-center">
                         <a href="{{ url('/admin') }}">Administración</a>
                     </div>
+                    @endif
                     <div class="col-md-2">
                         <a href="{{ url('/logout') }}">Logout</a>
                     </div>
