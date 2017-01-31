@@ -86,10 +86,13 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+    /* CREAR CONTROLADOR PARA ELIMINAR LOGICAMENTE USUARIOS */
+    public function logicaldelete($id)
     {
-        //
+        echo 'Hola Mundo';
     }
+
 
     /**
      * Show the form for editing the specified resource.
