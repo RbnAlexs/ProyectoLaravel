@@ -90,7 +90,9 @@ class UserController extends Controller
     /* CREAR CONTROLADOR PARA ELIMINAR LOGICAMENTE USUARIOS */
     public function logicaldelete($id)
     {
-        echo 'Hola Mundo';
+        $user = User::findOrFail($id);
+         $user->delete();
+        return Redirect::back();
     }
 
 
